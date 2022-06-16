@@ -31,3 +31,22 @@ And `extensions.json`:
 ```
 
 `npm i @typescript-eslint/eslint-plugin`, add `"plugin:@typescript-eslint/recommended"` to `"eslintConfig"."extends"` in `package.json`
+
+`npm i prettier eslint-config-prettier`, add `"prettier"` to `"eslintConfig"."extends"` in `package.json`
+
+Add to `settings.json`:
+
+```json
+"editor.formatOnSave": true,
+"editor.defaultFormatter": "esbenp.prettier-vscode"
+```
+
+Add `"esbenp.prettier-vscode"` to `extensions.json`
+
+Create `.prettierrc.json`:
+
+```json
+{
+  "singleQuote": true
+}
+```

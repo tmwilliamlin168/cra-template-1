@@ -11,6 +11,8 @@
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -27,7 +29,8 @@
     "extends": [
       "react-app",
       "react-app/jest",
-      "plugin:@typescript-eslint/recommended"
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
     ],
     "rules": {
       "eqeqeq": "error"
