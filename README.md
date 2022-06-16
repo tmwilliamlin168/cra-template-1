@@ -50,3 +50,19 @@ Create `.prettierrc.json`:
   "singleQuote": true
 }
 ```
+
+`npm i husky lint-staged`, `npx husky install`, `npx husky add .husky/pre-commit "npx lint-staged"`
+
+Create `lint-staged.config.js`:
+
+```js
+module.exports = {
+  '**/*.(ts|tsx)': () => 'npx tsc --noEmit',
+  '**/*.(ts|tsx|js)': (filenames) => [
+    `npx eslint --fix ${filenames.join(' ')}`,
+    `npx prettier --write ${filenames.join(' ')}`,
+  ],
+  '**/*.(md|json)': (filenames) =>
+    `npx prettier --write ${filenames.join(' ')}`,
+};
+```
