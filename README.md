@@ -1,4 +1,16 @@
-# Steps to reproduce template
+## Setup
+
+1. `npm i`
+2. Use VSCode, make sure the recommended eslint and prettier plugins are installed. Automatic linting should occur when you save!
+3. `npx husky install`. Automatic linting should occur when you commit!
+
+## Commands
+
+- `npm start`: Runs the CRA dev server.
+- `npm run build`: Generates the production build.
+- `npm run serve`: Serves the CRA production build with Python 3.
+
+## Steps to reproduce template
 
 `npx create-react-app --template typescript`
 
